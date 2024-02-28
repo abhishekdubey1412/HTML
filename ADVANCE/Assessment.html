@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Sign Up</title>
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Course Sign Up Page</h1>
+    <p><strong>Please Note:</strong> First name, Last name, Password and Email are required</p>
+
+    <!-- Form Element -->
+    <form action="Thanks.html" method="post">
+        <!-- Input Element with Label -->
+        <label for="firstname">First Name: </label>
+        <input id="firstname" type="text" name="fname" placeholder="Abhishek" required>
+
+        <label for="lastname">Last Name: </label>
+        <input id="lastname" type="text" name="lname" placeholder="Dubey" required> <br><br>
+
+        <label for="emailid">Email: </label>
+        <input id="emailid" type="email" name="useremail" placeholder="demo@gmail.com" required>
+
+        <label for="password">Password: </label>
+        <input id="password" type="password" name="password" required>
+
+        <p>Are you over the age of 18?</p>
+        <label for="older">Yes: </label>
+        <input type="radio" id="older" name="age" value="yes">
+
+        <label for="younger">No: </label>
+        <input type="radio" id="younger" name="age" value="no">
+
+        <p>Do you have a Credit Card or PayPal?</p>
+        <!-- Select Element -->
+        <select name="payment">
+            <!-- Options Element -->
+            <option value="cc">Credit Card</option>
+            <option value="pp">PayPal</option>
+        </select>
+
+        <input type="submit" value="SUBMIT">
+    </form>
+</body>
+</html>

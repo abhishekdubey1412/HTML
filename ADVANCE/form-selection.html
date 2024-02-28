@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form And Selection</title>
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Hotel Feedback Form</h1>
+
+    <!-- Form Element with post method -->
+    <form method="post">
+        <p>Are you From <strong>US</strong>? Or Outside the US.</p>
+
+        <!-- Input Element with Lable -->
+        <label for="inside">Inside: </label>
+        <input id="inside" type="radio" name="loc" value="Inside">
+
+        <label for="outside">Outside: </label>
+        <input id="outside" type="radio" name="loc" value="Outside">
+
+        <p>How was our service?</p>
+        <!-- Selection Element -->
+        <select name="stars" id="">
+            <!-- Option Element  -->
+            <option value="Great">3</option>
+            <option value="Okay">2</option>
+            <option value="Bad">1</option>
+        </select>
+
+        <p>Any other Feedback?</p>
+        <!-- Textarea Element -->
+        <textarea name="mytext" cols="60" rows="10"></textarea>
+
+        <!-- Submit Input -->
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
